@@ -3,19 +3,27 @@
     "name": "MyGymApp",
     "slug": "MyGymApp",
     "version": "1.0.0",
+    "scheme": "fittrack",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/menu/weights.webp",
+    "splash": {
+      "image": "./assets/images/menu/weights.webp",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "backgroundColor": "#000000",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.MyGymApp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#000000"
+      },
+      "package": "com.anonymous.MyGymApp"
     },
     "web": {
       "bundler": "metro",
@@ -28,11 +36,13 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "imageWidth": "100%",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000"
         }
-      ]
+      ],
+      "expo-font",
+      "expo-video"
     ],
     "experiments": {
       "typedRoutes": true
