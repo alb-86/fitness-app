@@ -1,10 +1,10 @@
-# 💪 Fitness Tracker App
+# Fitness Tracker App
 
 A modern fitness app for beginners and newbies in the world of weight lifting.
 
 ---
 
-## 🧠 Features
+## Features
 
 * Beginners fitness program
 
@@ -19,7 +19,7 @@ A modern fitness app for beginners and newbies in the world of weight lifting.
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repository:
 
@@ -42,7 +42,7 @@ npm install
 Run the development server:
 
 ```bash
-npm run dev
+npx start expo
 ```
 
 ---
