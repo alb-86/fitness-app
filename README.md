@@ -1,50 +1,198 @@
-# Welcome to your Expo app 👋
+# 💪 Fitness Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern fitness app for beginners and newbies in the world of weight lifting.
 
-## Get started
+---
 
-1. Install dependencies
+## 🧠 Features
 
-   ```bash
-   npm install
-   ```
+* Beginners fitness program
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## 🛠️ Tech Stack
 
-In the output, you'll find options to open the app in a
+* **Frontend:** React.js / React native
+* **Language:** TypeScript
+* **Styling:**  CSS
+* **State Management:** Context API 
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📦 Installation
 
-## Get a fresh project
-
-When you're ready, run:
+Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/fitness-app.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Navigate into the project:
 
-## Learn more
+```bash
+cd fitness-app
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Install dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm install
+```
 
-## Join the community
+Run the development server:
 
-Join our community of developers creating universal apps.
+```bash
+npm run dev
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 📁 Project Structure
+
+MyGymApp/
+├── app.json
+├── App.tsx
+├── babel.config.js
+├── expo-env.d.ts
+├── package.json
+├── react-native.config.js
+├── README.md
+├── tsconfig.json
+│
+├── android/
+│   ├── build.gradle
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── settings.gradle
+│   ├── app/
+│   │   ├── build.gradle
+│   │   ├── proguard-rules.pro
+│   │   └── src/
+│   │       ├── debug/
+│   │       │   └── AndroidManifest.xml
+│   │       └── main/
+│   │           ├── AndroidManifest.xml
+│   │           ├── java/com/anonymous/
+│   │           └── res/
+│   │               ├── drawable/
+│   │               ├── drawable-hdpi/
+│   │               ├── drawable-mdpi/
+│   │               ├── drawable-xhdpi/
+│   │               └── ...
+│   ├── build/
+│   │   └── generated/autolinking/
+│   │       ├── autolinking.json
+│   │       ├── package.json.sha
+│   │       └── yarn.lock.sha
+│   └── gradle/wrapper/
+│       └── gradle-wrapper.properties
+│
+├── app/
+│   ├── _layout.tsx
+│   ├── +not-found.tsx
+│   ├── about.tsx
+│   ├── contacts.tsx
+│   ├── workouts.tsx
+│   ├── (app)/
+│   │   ├── index.tsx
+│   │   └── _layout.tsx/
+│   │       └── _layout.tsx
+│   ├── (auth)/
+│   │   ├── login.tsx
+│   │   └── _layout.tsx/
+│   │       └── _layout.tsx
+│   ├── (tabs)/
+│   └── pages/
+│       ├── arms.tsx
+│       ├── back.tsx
+│       ├── cardio-and-core.tsx
+│       ├── chest.tsx
+│       ├── legs.tsx
+│       └── shoulders.tsx
+│
+├── assets/
+│   ├── fonts/
+│   ├── images/
+│   │   └── menu/
+│   └── videos/
+│
+├── components/
+│   ├── Collapsible.tsx
+│   ├── ExternalLink.tsx
+│   ├── Form.tsx
+│   ├── HapticTab.tsx
+│   ├── HelloWave.tsx
+│   ├── index.tsx
+│   ├── ParallaxScrollView.tsx
+│   ├── Social-icons.tsx
+│   ├── ThemedText.tsx
+│   ├── ThemedView.tsx
+│   ├── __tests__/
+│   │   ├── ThemedText-test.tsx
+│   │   └── __snapshots__/
+│   └── ui/
+│       ├── IconSymbol.ios.tsx
+│       ├── IconSymbol.tsx
+│       ├── TabBarBackground.ios.tsx
+│       └── TabBarBackground.tsx
+│
+├── constants/
+│   ├── ArmsWorkouts.tsx
+│   ├── BackWorkouts.tsx
+│   ├── Cardio&Core.tsx
+│   ├── ChestWorkouts.tsx
+│   ├── Colors.ts
+│   ├── Legs.tsx
+│   ├── MenuImages.tsx
+│   └── Shoulders.tsx
+│
+├── hooks/
+│   ├── useColorScheme.ts
+│   ├── useColorScheme.web.ts
+│   └── useThemeColor.ts
+│
+├── ios/
+│   ├── Podfile
+│   ├── Podfile.properties.json
+│   ├── MyGymApp/
+│   │   ├── AppDelegate.swift
+│   │   ├── Info.plist
+│   │   ├── MyGymApp-Bridging-Header.h
+│   │   ├── SplashScreen.storyboard
+│   │   ├── Images.xcassets/
+│   │   │   ├── Contents.json
+│   │   │   └── AppIcon.appiconset/Contents.json
+│   │   └── Supporting/Expo.plist
+│   └── MyGymApp.xcodeproj/
+│       ├── project.pbxproj
+│       ├── project.xcworkspace/
+│       │   ├── contents.xcworkspacedata
+│       │   └── xcshareddata/IDEWorkspaceChecks.plist
+│       └── xcshareddata/xcschemes/MyGymApp.xcscheme
+│
+├── scripts/
+│   └── reset-project.js
+│
+└── src/
+    ├── config/
+    │   └── firebase.ts
+    ├── context/
+    │   └── AuthContext.tsx
+    ├── services/
+    │   ├── authService.ts
+    │   └── biometricService.ts
+    └── types/
+        └── images.d.ts
+
+---
+
+## Future Improvements
+
+* User authentication (In folder structure, but still in progress)
+* Backend integration (Firebase / Supabase)
+* Advanced analytics dashboard
+* Social features/sharing workouts
+* Add actual videos of the workout to the app
+
+---
